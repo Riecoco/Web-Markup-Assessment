@@ -1,110 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Our Team</title>
-</head>
-<main>
+  </head>
+  <main>
     <h1>Book a Session</h1>
     <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
-        <!-- 'action' attribute specifies the URL to process the form data -->
-        <!-- 'method' attribute specifies how data is sent; 'POST' is common -->
-         <!-- Radio Buttons (Single Choice) -->
+      <!-- 'action' attribute specifies the URL to process the form data -->
+      <!-- 'method' attribute specifies how data is sent; 'POST' is common -->
+      <!-- Radio Buttons (Single Choice) -->
 
-    <fieldset>
+      <fieldset>
         <legend></legend>
 
         <label for="radio">Gender:</label>
         <section>
-            <p>
-                <input type="radio" name="gender" value="male" required> 
-                Mr.
-                <input type="radio" name="gender" value="female" required>
-                Mrs.
-            </p>
+          <p>
+            <input type="radio" name="gender" value="male" required />
+            Mr.
+            <input type="radio" name="gender" value="female" required />
+            Mrs.
+          </p>
         </section>
 
         <label for="name">Name:</label>
         <section>
-            <input type="text" id="name" name="name" placeholder="Your name" required>
-            <!-- 'label' associates with 'input’ id using 'for' attribute, 'name' for server
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+          <!-- 'label' associates with 'input’ id using 'for' attribute, 'name' for server
             access,'required' enforces input -->
         </section>
 
         <label for="email">Email</label>
         <section>
-            <input type="email" name="email" placeholder="youremail@mail.something">
+          <input
+            type="email"
+            name="email"
+            placeholder="youremail@mail.something"
+          />
         </section>
 
         <!-- Date Input -->
-          <label for="date">Date</label>
-          <section>
-            <input type="date" name="date" placeholder="dd/mm/yyyy">
-          </section>
+        <label for="date">Date</label>
+        <section>
+          <input type="date" name="date" placeholder="dd/mm/yyyy" />
+        </section>
 
         <!-- Time Input -->
-         <label for="time">Time</label>
-         <section>
-            <input type="time" name="time" min="09:00" max="17:00">
-         </section>
+        <label for="time">Time</label>
+        <section>
+          <input type="time" name="time" min="09:00" max="17:00" />
+        </section>
 
         <label for="message">Message:</label>
         <section>
-            <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message"></textarea>
-            <!-- 'textarea' for multi-line text input; 'rows' and 'cols' set dimensions -->
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            placeholder="Your message"
+          ></textarea>
+          <!-- 'textarea' for multi-line text input; 'rows' and 'cols' set dimensions -->
         </section>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" />
         <!-- 'input' with 'type="submit"' creates a submit button -->
-    </fieldset>
+      </fieldset>
     </form>
-</main>
+  </main>
 
-<footer>
-<h4>Main Pages</h4>
-<ul>
-    <li>
+  <footer>
+    <h4>Main Pages</h4>
+    <ul>
+      <li>
         <a href="">Home</a>
-    </li>
-    <li>
+      </li>
+      <li>
         <a href="">Advice</a>
-    </li>
-    <li>
+      </li>
+      <li>
         <a href="">Top Resources</a>
-    </li>
-    <li>
+      </li>
+      <li>
         <a href="">Contact</a>
-    </li>
-
-</ul>
-<h4>Forms</h4>
-<ul>
-    <li>
+      </li>
+    </ul>
+    <h4>Forms</h4>
+    <ul>
+      <li>
         <a href="">Book a Session</a>
-    </li>
-    <li>
+      </li>
+      <li>
         <a href="">Contact Our Team</a>
-    </li>
-</ul>
-<h4>Follow Us</h4>
-<a href="">
-    <img src="" alt="image">
-</a>
-<a href="">
-    <img src="" alt="image">
-</a>
-<a href="">
-    <img src="" alt="image">
-</a>
-<a href="">
-    <img src="" alt="image">
-</a>
-<a href="">
-    <img src="" alt="image">
-</a>
+      </li>
+    </ul>
+    <h4>Follow Us</h4>
+    <a href="">
+      <img src="" alt="image" />
+    </a>
+    <a href="">
+      <img src="" alt="image" />
+    </a>
+    <a href="">
+      <img src="" alt="image" />
+    </a>
+    <a href="">
+      <img src="" alt="image" />
+    </a>
+    <a href="">
+      <img src="" alt="image" />
+    </a>
 
-<p>Copyright &copy; Karoton 2024 All rights reserved.</p>
-</footer>
-
+    <p>Copyright &copy; Karoton 2024 All rights reserved.</p>
+  </footer>
 </html>
