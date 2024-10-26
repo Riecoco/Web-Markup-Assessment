@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advice Column</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
     <header>
       <figure>
-        <a href="home.html">
-          <img src="HEADER LOGO.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
+        <a href="home.html" class="headerlogo">
+          <img
+            src="HEADER LOGO.webp"
+            alt="KarotonIT Logo"
+            title="KarotonIT Logo"
+          />
         </a>
       </figure>
       <nav>
         <ul>
-          <li><a href="#" class = "navlink">Home</a></li>
-          <li><a href="#" class = "navlink active">Advice</a></li>
-          <li><a href="#" class = "navlink">Resources</a></li>
-          <li><a href="#" class = "navlink">Contact</a></li>
+          <li><a href="#" class="navlink">Home</a></li>
+          <li><a href="#" class="navlink active">Advice</a></li>
+          <li><a href="#" class="navlink">Resources</a></li>
+          <li><a href="#" class="navlink contact">Contact</a></li>
         </ul>
       </nav>
       <button class="get-started">Get Started</button>
     </header>
 
     <main>
-      <figure>
-        <img
-          src=""
-          alt="A yellow rectangular roadsign with the words 'Questions' and 'Answers' on it"
-          title="Don't be shy, we're here for you!"
-        />
-      </figure>
+      <section class="header-container">
+        <figure>
+          <img
+            class="header"
+            src="HEADIMAGEADVICE.webp"
+            alt="A yellow rectangular roadsign with the words 'Questions' and 'Answers' on it"
+            title="Don't be shy, we're here for you!"
+          />
+        </figure>
+        <h1>Advice Column</h1>
+      </section>
 
       <section class="advice-column">
-        <h3>Advice Column</h3>
         <p>
           Get practical tips, personal stories, and expert advice to help you
           thrive in your first year—whether you're tackling assignments or
@@ -43,39 +51,43 @@
         </p>
 
         <!-- Button 1 (Dear Younger Me) -->
-        <article class="button">
-          <figure class="image-placeholder">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Black-and-white image of a letter with flowers on it."
-              title="Dear Younger Me, don't be dumb. Do this stuff!"
-            />
-          </figure>
-          <section>
-            <h4>Dear Younger Me ...</h4>
-            <p>
-              In this article, 3 students share the top 5 things they would tell
-              their younger selves to do if they had the chance.
-            </p>
-            <time datetime="2024-08-14">August 14, 2024</time>
-          </section>
-        </article>
+        <section class="button-container">
+          <article class="button">
+            <figure>
+              <img
+                src="dymthumbnail.webp"
+                alt="Black-and-white image of a letter with flowers on it."
+                title="Dear Younger Me, don't be dumb. Do this stuff!"
+              />
+            </figure>
+            <section>
+              <h2>Dear Younger Me ...</h2>
+              <p>
+                In this article, 3 students share the top 5 things they would
+                tell their younger selves to do if they had the chance.
+              </p>
+              <time datetime="2024-08-14">August 14, 2024</time>
+            </section>
+          </article>
+        </section>
 
         <!-- Button 2 (Start the School Year with a Bang) -->
-        <article class="button">
-          <figure class="image-placeholder">
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Image of a red exclamation mark surrounded by comic lines"
-              title="!!!!!"
-            />
-          </figure>
-          <section>
-            <h4>Start the School Year with a Bang</h4>
-            <p>Follow these great tips to get a head-start this year.</p>
-            <time datetime="2024-08-14">August 14, 2024</time>
-          </section>
-        </article>
+        <section class="button-container">
+          <article class="button">
+            <figure>
+              <img
+                src="startbang 1.webp"
+                alt="Image of a red exclamation mark surrounded by comic lines"
+                title="!!!!!"
+              />
+            </figure>
+            <section>
+              <h2>Start the School Year with a Bang</h2>
+              <p>Follow these great tips to get a head-start this year.</p>
+              <time datetime="2024-08-14">August 14, 2024</time>
+            </section>
+          </article>
+        </section>
       </section>
     </main>
 
@@ -102,21 +114,21 @@
       <section class="social-media">
         <h6>Follow Us</h6>
         <section class="social-media-icons">
-        <a href="https://whatsapp.com/">
-          <img src="whatsappsq.webp" alt="whatsapp logo" title="whatsapp" />
-        </a>
-        <a href="https://www.instagram.com/">
-          <img src="instagram.webp" alt="instagram logo" title="instagram" />
-        </a>
-        <a href="https://www.linkedin.com/">
-          <img src="linkedin.webp" alt="linkedin logo" title="linkedin" />
-        </a>
-        <a href="https://x.com/">
-          <img src="social-media.webp" alt="x logo" title="twitter x" />
-        </a>
-        <a href="https://telegram.org/">
-          <img src="telegramsq.webp" alt="telegram logo" title="telegram" />
-        </a>
+          <a href="https://whatsapp.com/">
+            <img src="whatsappsq.webp" alt="whatsapp logo" title="whatsapp" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="instagram.webp" alt="instagram logo" title="instagram" />
+          </a>
+          <a href="https://www.linkedin.com/">
+            <img src="linkedin.webp" alt="linkedin logo" title="linkedin" />
+          </a>
+          <a href="https://x.com/">
+            <img src="social-media.webp" alt="x logo" title="twitter x" />
+          </a>
+          <a href="https://telegram.org/">
+            <img src="telegramsq.webp" alt="telegram logo" title="telegram" />
+          </a>
         </section>
         <p>Designed by Freepik</p>
       </section>

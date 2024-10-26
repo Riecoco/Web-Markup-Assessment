@@ -70,6 +70,16 @@ header {
     padding-bottom: 20px;
 }
 
+.headerlogo img {
+    width: 110px;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+header figure img {
+    margin-left: 5%;
+}
+
 nav {
     margin-left: auto; /* Push the navigation to the right */
 }
@@ -97,6 +107,10 @@ nav ul li {
 
 }
 
+.navlink.contact {
+    margin-right: 25px;
+}
+
 .navlink.active {
     color: #ffa629;
 }
@@ -105,7 +119,7 @@ nav ul li {
     content: '';
     position: absolute;
     left:50%;
-    bottom: -20px;
+    bottom: -35px;
     transform: translateX(-50%);
     width: 60%;
     border-bottom: 2px solid transparent;
@@ -137,6 +151,7 @@ figure a img {
     padding: 10px 20px;
     cursor: pointer;
     margin-left: 20px; /* Space between nav links and button */
+    margin-right: 2%;
     font-family: "Outfit", serif;
     text-transform: uppercase;
     font-weight: bolder;
@@ -144,37 +159,61 @@ figure a img {
     border-radius: 45px;
 }
 
-main h2 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    line-height: 1.2;
+.header {
+    margin-left: -20px;
+    width: 98.7vw;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    z-index: 1;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+}
+
+main h1 {
+    transform: translate(1.5%, -60%); /* a css scale property that translates elements by its x and y values on the x and y axis */
+    z-index: 10;
+    font-size: 6rem;
 }
 
 .advice-column {
-    margin-top: 40px;
-}
-
-.advice-column h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    max-width: 95%;
+    transform : translate(0%, -12%);
 }
 
 .advice-column p {
-    margin-bottom: 30px;
-    color: #ccc;
+    margin-bottom: 1.5rem;
+    color: #e8ebe4;
+    font-family: Syne;
+    font-size: 1.1rem;
+    
 }
 
+.advice-column p:first-child {
+    margin-left:5%;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
 .button {
     display: flex;
-    background-color: #2e3a52;
-    color: #fff;
+    background-color: transparent;
     text-decoration: none;
-    border-radius: 20px;
+    border: 2px solid #e8ebe4;
+    border-radius: 30px;
     padding: 0; /* No padding around the button */
-    margin-bottom: 30px;
-    border: 2px solid transparent;
+    margin-bottom: 5%;
+    max-width: 80%;
     transition: border 0.3s ease;
+}
+.button img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .button:hover {
@@ -183,16 +222,6 @@ main h2 {
 
 .button:active {
     border-color: #ffa629;
-}
-
-.image-placeholder {
-    background-color: #4a3f99;
-    width: 632px;
-    height: 494px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
-    flex-shrink: 0; /* Prevents shrinking of the image */
 }
 
 article section {
