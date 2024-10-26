@@ -1,15 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap');
+/**
+.outfit-<uniquifier> {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
+.syne-<uniquifier> {
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+  **/
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
 body {
-    background-color: #1c2233;
-    color: #fff;
+    background-color: #1c2532;
+    color:#e8ebe4;
     padding: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Outfit", serif;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+h6 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
 }
 
 header {
@@ -29,21 +80,68 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 20px;
+    justify-content: space-around;
 }
 
-nav a {
-    color: #fff;
+.navlink {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #e8ebe4;
+    font-family: "Outfit", serif;
+    font-size: 0.8rem;
+    font-weight: lighter;
     text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.1s ease;
+
+}
+
+.navlink.active {
+    color: #ffa629;
+}
+
+.navlink::after {
+    content: '';
+    position: absolute;
+    left:50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    width: 60%;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.1s ease;
+}
+
+/** ::after is a "pseudo-element" used to insert content after the content of an element **/
+
+.navlink:active::after {
+    border-color: #ffa629;
+    text-decoration-color:#ffa629;
+}
+
+.navlink:hover {
+    color: #9fc4ff;
+}
+.navlink:hover::after {
+    border-color: #9fc4ff;
+}
+
+figure a img {
+    width: 20%;
 }
 
 .get-started {
     background-color: #ff9400;
-    color: #fff;
+    color: #1c2532;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin-left: 20px; /* Space between nav links and button */
+    font-family: "Outfit", serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.15rem;
+    border-radius: 45px;
 }
 
 main h2 {
@@ -80,11 +178,11 @@ main h2 {
 }
 
 .button:hover {
-    border-color: blue;
+    border-color: #9fc4ff;
 }
 
 .button:active {
-    border-color: orange;
+    border-color: #ffa629;
 }
 
 .image-placeholder {
@@ -117,10 +215,19 @@ time {
 
 footer {
     display: flex;
-    justify-content: space-between;
     margin-top: 40px;
-    padding-top: 20px;
+    padding-top: 40px;
     border-top: 1px solid #ccc;
+    background-color: #9fc4ff;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -40px;
+    justify-content: space-around;
+    color: #1c2532;
+}
+
+footer figure img {
+    max-height: 50%;
 }
 
 footer section ul {
@@ -131,13 +238,25 @@ footer section ul li {
     margin-bottom: 10px;
 }
 
+footer a, footer p {
+    color: #1c2532;
+    font-family: "Syne", sans-serif;
+}
 footer a {
-    color: #fff;
     text-decoration: none;
+    font-size: 1rem;
 }
 
-footer .social-media p {
-    margin-top: 20px;
+footer .social-media {
+    flex-direction: column;
+}
+
+footer .social-media .social-media-icons {
+    margin-top: 5px;
     font-size: 0.8rem;
     color: #aaa;
+    width : 120px;
+    height: 85px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
