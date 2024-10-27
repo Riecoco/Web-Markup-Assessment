@@ -1,115 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KarotonIT - Home</title>
-    <link rel="stylesheet" type="text/css" href="style1.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KarotonIT - Home</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Syne:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
 
-  <header>
-    <nav>
-      <ul class="navbar syne-text">
-        <li>
-          <img src="" alt="logo" title="Logo" />
-        </li>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">Advice</a>
-        </li>
-        <li>
-          <a href="">Resources</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<header class="navbar">
+  <nav class="toplinks">
+    <ul>
+      <li><a href="home.html" class="navlink active">Home</a></li>
+      <li><a href="advicecolumn.html" class="navlink">Advice</a></li>
+      <li><a href="topresources.html" class="navlink">Resources</a></li>
+      <li><a href="contact-page.html" class="navlink contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button type="button" class="get-started" onclick="window.location.href = 'topresources.html'">GET STARTED</button>
+</header>
+
+<body>
+  
+  <section class="cookies">
+    <p>Will you accept our cookies?</p>
+    <section class="choice">
+      <button type="button" class="get-started">Accept</button>
+      <button type="button" class="get-started">Decline</button>
+    </section>
+  </section>
 
   <main>
-    <body>
-      <section class="hero">
+    <section class="hero">
+      <section class="giftext">
+        <p>Welcome to</p>
+        <img src="HEADER LOGO.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
+        <button type="button" class="get-started">Get Started</button>
+      </section>
+      <img class="klog" src="rokartanime-ezgif.com-video-to-gif-converter.gif" alt="GIF of a rocket carrot"
+        title="ROCKET CARROT!!!" />
+    </section>
+
+    <p class="statement">START FRESHMAN YEAR LIKE A ROCKET</p>
+
+    <section class="link_direction">
+      <section class="booking">
+        <section class="hed">
+          <h2>Direct access to personal help</h2>
+          <p>Fill out a contact form to book
+            a call with those who succeeded
+            in their first year</p>
+          <button type="button" class="get-started" onclick="window.location.href = 'BF.html'">Book A Session</button>
+        </section>
+        <img class="bookimg" src="handshake.webp" alt="handshake icon" title="handshake icon" />
+      </section>
+
+      <section class="advice">
+        <img src="bubbles.webp" alt="three comment bubbles" title="three comment bubbles" />
+        <section class="hed">
+          <h2>Advice from the best of the best</h2>
+          <p>
+            Read blogs written by the successful to help ace your freshman
+            year, be it in any personal, social or academic area
+          </p>
+          <button type="button" class="get-started link" onclick="window.location.href = 'advicecolumn.html'">Get
+            Advice</button>
+        </section>
+      </section>
+
+      <section class="topResources">
+        <section class="hed">
+          <h2>Get our top recommended resources</h2>
+          <p>Carefully curated by past and present students</p>
+          <button type="button" class="get-started link" onclick="window.location.href = 'topresources.html'">Read and
+            Watch</button>
+        </section>
+        <img src="resources.webp" alt="Floating icons (vscode, youtube, books)" title="ULTIMATE RESOURCES" />
+      </section>
+
+      <section class="team">
         <section>
-          <h3 class="syne-text welcome">Welcome to</h3>
-          <h1 class="major-mono-display-regular">Karoton</h1>
-          <button type="button">Get Started</button>
+          <img src="joinourteam.webp" alt="Team of people working together" title="Team of people working together" />
+          <button type="button" class="get-started special" onclick="window.location.href = 'cotform.html'">Join Our
+            Team</button>
         </section>
-        <img src="" alt="image" />
+        <p>Welcome to Karoton!
+          Our mission is to make IT courses less stressful and more fun for freshmen, helping them succeed with
+          confidence.
+          We're here to support your journey—and we can't do it without you!
+          If you're an experienced student, join us as a Student Helper and help guide the next generation.
+          Together, we’ll bring the future to life!
+        </p>
       </section>
 
-      <header class="descript major-mono-display-regular">
-        Ace Your Freshman Year With Flying Colors
-      </header>
-
-      <section class="link_direction">
-        <section class="booking syne-text">
-          <section class="hed">
-            <h1>Direct access to personal help</h1>
-            <p>Send contact form to those who succeded in their first year</p>
-            <button type="button">Contact Us</button>
-          </section>
-          <img class="bookimg" src="" alt="image" />
-        </section>
-
-        <section class="advice syne-text">
-          <img src="" alt="image" />
-          <section class="hed">
-            <h1>Advice from the best of the best</h1>
-            <p>
-              Read blogs written by the successful to help ace your freshman
-              year, be it in any personal, social or academic area
-            </p>
-            <button type="button">Get Advice</button>
-          </section>
-        </section>
-
-        <section class="topResources syne-text">
-          <section class="hed">
-            <h1>Get our top recommended resources</h1>
-            <p>Carefully curated by past and present students</p>
-            <button type="button">Read and Watch</button>
-          </section>
-          <img src="" alt="image" />
-        </section>
-
-        <section class="goodbye">
-          <img class="across" src="" alt="image" />
-          <p>Let's ace our exams TOGETHER</p>
-          <button type="button">GET STARTED</button>
+      <section class="goodbye">
+        <img class="across" src="graduates.webp" alt="Three college graduate girls smiling"
+          title="DO YOU WANNA BE THISSS? FOLLOW US" />
+        <section>
+          <h4>Let’s ace our exams
+            TOGETHER</h4>
+          <button type="button" class="get-started" onclick="window.location.href = 'topresources.html'">GET
+            STARTED</button>
         </section>
       </section>
-    </body>
+
+    </section>
   </main>
+</body>
 
-  <footer>
-    <ul class="footerlist syne-text">
-      <li>
-        <a href="">Home</a>
-      </li>
-      <li>
-        <a href="">Contact Us</a>
-      </li>
-      <li>
-        <a href=""></a>
-      </li>
+<footer>
+  <figure>
+    <img src="Asset-3.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
+  </figure>
+  <section class="page-links">
+    <h6>Main Pages</h6>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="advicecolumn.html">Advice Column</a></li>
+      <li><a href="topresources.html">Top Resources</a></li>
+      <li><a href="contact-page.html">Contact</a></li>
     </ul>
-    <p>Copyright &copy; Karoton 2024 All rights reserved.</p>
-  </footer>
+  </section>
+
+  <section class="forms">
+    <h6>Forms</h6>
+    <ul>
+      <li><a href="bookingform.html">Book a Session</a></li>
+      <li><a href="cotform.html">Contact Our Team</a></li>
+    </ul>
+  </section>
+
+  <section class="social-media">
+    <h6>Follow Us</h6>
+    <section class="social-media-icons">
+      <a href="https://whatsapp.com/">
+        <img src="whatsappsq.webp" alt="whatsapp logo" title="whatsapp" />
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="instagram.webp" alt="instagram logo" title="instagram" />
+      </a>
+      <a href="https://www.linkedin.com/">
+        <img src="linkedin.webp" alt="linkedin logo" title="linkedin" />
+      </a>
+      <a href="https://x.com/">
+        <img src="social-media.webp" alt="x logo" title="twitter x" />
+      </a>
+      <a href="https://telegram.org/">
+        <img src="telegramsq.webp" alt="telegram logo" title="telegram" />
+      </a>
+    </section>
+    <p>Designed by Freepik</p>
+    <p>&copy; 2024 Karoton IT</p>
+  </section>
+</footer>
+
 </html>

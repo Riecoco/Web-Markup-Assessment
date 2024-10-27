@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Top Resources</title>
-  </head>
 
-  <header>
-    <nav>
-      <ul class="navbar syne-text">
-        <li>
-          <img src="" alt="logo" title="Logo" />
-        </li>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">Advice</a>
-        </li>
-        <li>
-          <a href="">Resources</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advice Column</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
 
-  <body>
-    <main>
-      <header>
-        <img src="" alt="header-image" />
-        <h1>Top Recommended Resources</h1>
-      </header>
-      <article>
-        <section>
-          <section id="moocs-ots"><h2>MOOCs and Online Tutorials</h2></section>
+<header class="navbar">
+  <figure>
+    <a href="home.html" class="headerlogo">
+      <img src="HEADER LOGO.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
+    </a>
+  </figure>
+  <nav class="toplinks">
+    <ul>
+      <li><a href="home.html" class="navlink">Home</a></li>
+      <li><a href="advicecolumn.html" class="navlink">Advice</a></li>
+      <li><a href="topresources.html" class="navlink active">Resources</a></li>
+      <li><a href="contact-page.html" class="navlink contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button type="button" class="get-started" onclick="window.location.href = 'BF.html'">Book A Session</button>
+</header>
+
+<body>
+  <main>
+    <section class="header-container">
+      <figure>
+        <img class="header" src="Mask group.webp" alt="collage of some popular resources, e.g: bigdevsoon, w3schools "
+          title="You can't live without these 😲" />
+      </figure>
+      <h1 class="newh1">Top Recommended Resources</h1>
+    </section>
+
+    <article class="topr">
+      <section class="points">
+        <p>
+          Starting in IT can be challenging, but with the right tools, you’ll build essential skills step-by-step.
+          Below is a list of resources across various domains that guide you through coding, design, and core IT
+          concepts.
+        </p>
+
+        <section class="moocs-and-otcs">
+          <section id="moocs-ots">
+            <h2>MOOCs and Online Tutorials</h2>
+          </section>
           <ul>
             <li>
               <a href="https://w3schools.com">W3Schools:</a>
@@ -46,38 +57,34 @@
               with practical coding exercises.
             </li>
             <li>
-              <a href="https://www.w3schools.com/css/css3_flexbox.asp"
-                >CSS Flexbox:</a
-              >
+              <a href="https://www.w3schools.com/css/css3_flexbox.asp">
+                CSS Flexbox:
+              </a>
               This guide teaches you how to use Flexbox to build responsive web
               layouts, explaining both concepts and syntax clearly. Flexbox is
               essential for creating flexible, mobile-friendly web designs.
             </li>
           </ul>
           <figure>
-            <img src="" alt="flexbox tutorial" />
+            <img src="image 28.webp" alt="Watch this flexbox tutorial on youtube (Learn Flexbox in 8 minutes)"
+              title="Funny and educational:)" />
             <figcaption>
               For visual learners watch the YouTube tutorial
-              <a href="https://www.youtube.com/watch?v=phWxA89Dy94"
-                >Learn Flexbox in 8 Minutes
+              <a href="https://www.youtube.com/watch?v=phWxA89Dy94">Learn Flexbox in 8 Minutes
               </a>
             </figcaption>
           </figure>
 
           <ul>
             <li>
-              <a href="https://www.w3schools.com/css/default.asp"
-                >CSS Basics:</a
-              >
+              <a href="https://www.w3schools.com/css/default.asp">CSS Basics:</a>
               This tutorial introduces CSS, helping beginners learn how to style
               web pages with colors, fonts, and layouts. It also covers
               intermediate topics like transitions and animations.
             </li>
 
             <li>
-              <a href="https://www.tutorialspoint.com/index.htm"
-                >TutorialsPoint:</a
-              >
+              <a href="https://www.tutorialspoint.com/index.htm">TutorialsPoint:</a>
               Offering detailed tutorials across a wide range of fields—such as
               software development, artificial intelligence, and machine
               learning—this site makes it easy to explore new technologies. The
@@ -101,25 +108,21 @@
           </ul>
 
           <figure>
-            <img src="" alt="brocode youtube channel" />
+            <img src="Screenshot (116) 1.webp" alt="Check out BroCodez on YouTube" title="BroCodez before..." />
             <figcaption>Watch Bro Code tutorials on YouTube</figcaption>
           </figure>
 
           <ul>
             <ul>
               <li>
-                <a href="https://www.youtube.com/watch?v=phWxA89Dy94"
-                  >Python for Beginners:</a
-                >
+                <a href="https://www.youtube.com/watch?v=phWxA89Dy94">Python for Beginners:</a>
                 This course introduces key Python concepts such as loops,
                 variables, and functions. The instructor uses real-world
                 examples to illustrate how Python can be used in practical
                 scenarios.
               </li>
               <li>
-                <a href="https://www.youtube.com/watch?v=bOUhq46fd5g"
-                  >C# Full Course:</a
-                >
+                <a href="https://www.youtube.com/watch?v=bOUhq46fd5g">C# Full Course:</a>
                 A beginner-friendly introduction to C#, this tutorial covers the
                 basics and progresses into more complex topics like
                 object-oriented programming (OOP). It’s a valuable resource for
@@ -139,15 +142,13 @@
           </ul>
         </section>
 
-        <section>
+        <section class="iidt">
           <section id="img-ill-dt">
             <h2>Images, Illustrations, and Design Tools</h2>
           </section>
           <ul>
             <li>
-              <a href="https://www.getillustrations.com/illustration-packs"
-                >GetIllustrations:</a
-              >
+              <a href="https://www.getillustrations.com/illustration-packs">GetIllustrations:</a>
               This site offers pre-designed illustration packs that help bring
               creativity to presentations, apps, and websites. These
               ready-to-use illustrations can save time on design while enhancing
@@ -170,8 +171,9 @@
           </ul>
 
           <figure>
-            <img src="" alt="freepik ai" />
-            <figcaption></figcaption>
+            <img src="Screenshot (119) 1.webp" alt="Freepik AI is great for getting content for uni projects :D"
+              title="20 FREE IMAGES A DAY WHAT!" />
+            <figcaption>Generate 20 free AI images per day on FreePik</figcaption>
           </figure>
 
           <ul>
@@ -185,25 +187,22 @@
           </ul>
         </section>
 
-        <section>
+        <section class="rbaa">
           <section id="rec-books-and-articles">
             <h2>Recommended Books and Articles</h2>
           </section>
           <ul>
             <il>
-              <a href="https://www.robmiles.com/c-yellow-book/"
-                >The C# Yellow Book by Rob Miles:</a
-              >
+              <a href="https://www.robmiles.com/c-yellow-book/">The C# Yellow Book by Rob Miles:
+              </a>
               Written by a seasoned instructor, this free e-book offers a
               beginner-friendly introduction to C#. It includes practical
               exercises and examples that help students practice core
               programming concepts effectively.
             </il>
             <li>
-              <a
-                href="https://www.amazon.com/Head-First-Series-Books/b?ie=UTF8&node=8456760011"
-                >Head First Series:</a
-              >
+              <a href="https://www.amazon.com/Head-First-Series-Books/b?ie=UTF8&node=8456760011">Head First Series:
+              </a>
               The Head First series stands out for its visual teaching approach,
               using illustrations, puzzles, and diagrams to make complex topics
               easier to understand. These books cover a variety of subjects,
@@ -211,18 +210,17 @@
             </li>
             <li>
               <a
-                href="https://www.dummies.com/book/technology/programming-web-design/csharp/c-10-0-all-in-one-for-dummies-289764/"
-                >C# 10.0 All-in-One for Dummies:</a
-              >
+                href="https://www.dummies.com/book/technology/programming-web-design/csharp/c-10-0-all-in-one-for-dummies-289764/">C#
+                10.0 All-in-One for Dummies:
+              </a>
               This book provides a step-by-step guide to learning C# from the
               ground up, covering both beginner and advanced concepts. With
               real-world examples, it’s a valuable resource for building
               practical programming skills.
             </li>
             <li>
-              <a href="https://en.wikiversity.org/wiki/IT_Fundamentals"
-                >Wikiversity - IT Fundamentals:</a
-              >
+              <a href="https://en.wikiversity.org/wiki/IT_Fundamentals">Wikiversity - IT Fundamentals:
+              </a>
               This free online resource introduces the core principles of IT,
               including networking, cybersecurity, and hardware basics. It’s
               great for students who want a broad understanding of IT concepts
@@ -237,66 +235,75 @@
             the learning process!
           </p>
         </section>
-      </article>
+      </section>
+
       <aside>
-        <nav>
-          <ul>
-            <li>
-              <a href="#moocs-ots">MOOCs and Online Tutorials</a>
-            </li>
-            <li>
-              <a href="#img-ill-dt">Images, Illustrations, and Design Tools</a>
-            </li>
-            <li>
-              <a href="#rec-books-and-articles"
-                >Recommended Books and Articles</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <section>
+          <h6>Table of Contents</h6>
+          <nav>
+            <ul>
+              <li>
+                <a href="#moocs-ots">MOOCs and Online Tutorials</a>
+              </li>
+              <li>
+                <a href="#img-ill-dt">Images, Illustrations, and Design Tools</a>
+              </li>
+              <li>
+                <a href="#rec-books-and-articles">Recommended Books and Articles</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+
       </aside>
-    </main>
-  </body>
-  <footer>
-    <h4>Main Pages</h4>
+    </article>
+
+  </main>
+</body>
+
+<footer>
+  <figure>
+    <img src="Asset-3.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
+  </figure>
+  <section class="page-links">
+    <h6>Main Pages</h6>
     <ul>
-      <li>
-        <a href="">Home</a>
-      </li>
-      <li>
-        <a href="">Advice</a>
-      </li>
-      <li>
-        <a href="">Top Resources</a>
-      </li>
-      <li>
-        <a href="">Contact</a>
-      </li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="advicecolumn.html">Advice Column</a></li>
+      <li><a href="topresources.html">Top Resources</a></li>
+      <li><a href="contact-page.html">Contact</a></li>
     </ul>
-    <h4>Forms</h4>
+  </section>
+  <section class="forms">
+    <h6>Forms</h6>
     <ul>
-      <li>
-        <a href="">Book a Session</a>
-      </li>
-      <li>
-        <a href="">Contact Our Team</a>
-      </li>
+      <li><a href="bookingform.html">Book a Session</a></li>
+      <li><a href="cotform.html">Contact Our Team</a></li>
     </ul>
-    <h4>Follow Us</h4>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-  </footer>
+  </section>
+  <section class="social-media">
+    <h6>Follow Us</h6>
+    <section class="social-media-icons">
+      <a href="https://whatsapp.com/">
+        <img src="whatsappsq.webp" alt="whatsapp logo" title="whatsapp" />
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="instagram.webp" alt="instagram logo" title="instagram" />
+      </a>
+      <a href="https://www.linkedin.com/">
+        <img src="linkedin.webp" alt="linkedin logo" title="linkedin" />
+      </a>
+      <a href="https://x.com/">
+        <img src="social-media.webp" alt="x logo" title="twitter x" />
+      </a>
+      <a href="https://telegram.org/">
+        <img src="telegramsq.webp" alt="telegram logo" title="telegram" />
+      </a>
+    </section>
+    <p>Designed by Freepik</p>
+    <p>&copy; 2024 Karoton IT</p>
+  </section>
+</footer>
+</body>
+
 </html>

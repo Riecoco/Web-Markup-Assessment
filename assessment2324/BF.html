@@ -1,167 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book A Session</title>
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book A Session</title>
 
-  <header class="navbar">
-    <figure>
-      <a href="home.html" class="headerlogo">
-        <img
-          src="HEADER LOGO.webp"
-          alt="KarotonIT Logo"
-          title="KarotonIT Logo"
-        />
-      </a>
-    </figure>
-    <nav class="toplinks">
-      <ul>
-        <li><a href="#" class="navlink">Home</a></li>
-        <li><a href="#" class="navlink">Advice</a></li>
-        <li><a href="#" class="navlink">Resources</a></li>
-        <li><a href="#" class="navlink active contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button
-      type="button"
-      class="get-started"
-      onclick="window.location.href = 'topresources.html'"
-    >
-      Get Started
-    </button>
-  </header>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
 
-  <body>
-    <main>
-      <h3>Book a Session</h3>
-      <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
-        <!-- 'action' attribute specifies the URL to process the form data -->
-        <!-- 'method' attribute specifies how data is sent; 'POST' is common -->
-        <!-- Radio Buttons (Single Choice) -->
+<header class="navbar">
+  <figure>
+    <a href="home.html" class="headerlogo">
+      <img src="HEADER LOGO.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
+    </a>
+  </figure>
+  <nav class="toplinks">
+    <ul>
+      <li><a href="home.html" class="navlink">Home</a></li>
+      <li><a href="advicecolumn.html" class="navlink">Advice</a></li>
+      <li><a href="topresources.html" class="navlink">Resources</a></li>
+      <li><a href="contact-page.html" class="navlink active contact">Contact</a></li>
+    </ul>
+  </nav>
+  <button type="button" class="get-started" onclick="window.location.href = 'topresources.html'">
+    Get Started
+  </button>
+</header>
 
-        <fieldset>
-          <p>* indicates required fields</p>
-          <section>
-            <label for="gender">Gender*:</label>
-            <select name="gender" id="gender" required>
-              <option value="Mr.">Mr.</option>
-              <option value="Mrs.">Mrs.</option>
-            </select>
-          </section>
+<body>
+  <main>
+    <h3>Book a Session</h3>
+    <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
+      <!-- 'action' attribute specifies the URL to process the form data -->
+      <!-- 'method' attribute specifies how data is sent; 'POST' is common -->
+      <!-- Radio Buttons (Single Choice) -->
 
-          <section>
-            <label for="name">Name*:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your full name"
-              required
-            />
-            <!-- 'label' associates with 'input’ id using 'for' attribute, 'name' for server
+      <fieldset>
+        <p>* indicates required fields</p>
+        <section>
+          <label for="gender">Gender*:</label>
+          <select name="gender" id="gender" required>
+            <option value="Mr.">Mr.</option>
+            <option value="Mrs.">Mrs.</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="name">Name*:</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
+          <!-- 'label' associates with 'input’ id using 'for' attribute, 'name' for server
               access,'required' enforces input -->
-          </section>
+        </section>
 
-          <section>
-            <label for="email">Email*:</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="youremail@mail.something"
-              required
-            />
-          </section>
+        <section>
+          <label for="email">Email*:</label>
+          <input type="email" name="email" placeholder="youremail@mail.something" required />
+        </section>
 
-          <section>
-            <label for="phone">Phone:</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="06x-xxx-xxxx"
-            />
-            <!-- 'type="tel"' for telephone number input -->
-          </section>
+        <section>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="06x-xxx-xxxx" />
+          <!-- 'type="tel"' for telephone number input -->
+        </section>
 
 
-          <section>
-            <label for="date">Session Date*:</label>
-            <input type="date" id="date" name="date" required />
-            <!-- 'type="date"' for date input -->
-          </section>
+        <section>
+          <label for="date">Session Date*:</label>
+          <input type="date" id="date" name="date" required />
+          <!-- 'type="date"' for date input -->
+        </section>
 
-          <section>
-            <label for="time">Session Time*:</label>
-            <input type="time" id="time" name="time" required />
-            <!-- 'type="time"' for time input -->
-          </section>
+        <section>
+          <label for="time">Session Time*:</label>
+          <input type="time" id="time" name="time" required />
+          <!-- 'type="time"' for time input -->
+        </section>
 
-          <section>
-            <label for="message">Message*:</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              cols="50"
-              placeholder="Could you tell us a brief description about your question or request? We’d love to hear it :) Would you like to join us? Then tell us a bit about yourself, your qualifications and why you’d like to help us!"
-              required
-            ></textarea>
-            <!-- 'textarea' for multi-line text input; 'rows' and 'cols' set dimensions -->
-          </section>
+        <section>
+          <label for="message">Message*:</label>
+          <textarea id="message" name="message" rows="4" cols="50"
+            placeholder="Could you tell us a brief description about your question or request? We’d love to hear it :) Would you like to join us? Then tell us a bit about yourself, your qualifications and why you’d like to help us!"
+            required></textarea>
+          <!-- 'textarea' for multi-line text input; 'rows' and 'cols' set dimensions -->
+        </section>
 
-          <input type="submit" value="Submit" class="get-started submit" />
-          <!-- 'input' with 'type="submit"' creates a submit button -->
-        </fieldset>
-      </form>
-    </main>
-  </body>
+        <input type="submit" value="Submit" class="get-started submit" />
+        <!-- 'input' with 'type="submit"' creates a submit button -->
+      </fieldset>
+    </form>
+  </main>
+</body>
 
-  <footer>
-    <figure>
-      <img src="Asset-3.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
-    </figure>
-    <section class="page-links">
-      <h6>Main Pages</h6>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="advicecolumn.html">Advice Column</a></li>
-        <li><a href="topresources.html">Top Resources</a></li>
-        <li><a href="contact-page.html">Contact</a></li>
-      </ul>
+<footer>
+  <figure>
+    <img src="Asset-3.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
+  </figure>
+  <section class="page-links">
+    <h6>Main Pages</h6>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="advicecolumn.html">Advice Column</a></li>
+      <li><a href="topresources.html">Top Resources</a></li>
+      <li><a href="contact-page.html">Contact</a></li>
+    </ul>
+  </section>
+  <section class="forms">
+    <h6>Forms</h6>
+    <ul>
+      <li><a href="bookingform.html">Book a Session</a></li>
+      <li><a href="cotform.html">Contact Our Team</a></li>
+    </ul>
+  </section>
+  <section class="social-media">
+    <h6>Follow Us</h6>
+    <section class="social-media-icons">
+      <a href="https://whatsapp.com/">
+        <img src="whatsappsq.webp" alt="whatsapp logo" title="whatsapp" />
+      </a>
+      <a href="https://www.instagram.com/">
+        <img src="instagram.webp" alt="instagram logo" title="instagram" />
+      </a>
+      <a href="https://www.linkedin.com/">
+        <img src="linkedin.webp" alt="linkedin logo" title="linkedin" />
+      </a>
+      <a href="https://x.com/">
+        <img src="social-media.webp" alt="x logo" title="twitter x" />
+      </a>
+      <a href="https://telegram.org/">
+        <img src="telegramsq.webp" alt="telegram logo" title="telegram" />
+      </a>
     </section>
-    <section class="forms">
-      <h6>Forms</h6>
-      <ul>
-        <li><a href="bookingform.html">Book a Session</a></li>
-        <li><a href="cotform.html">Contact Our Team</a></li>
-      </ul>
-    </section>
-    <section class="social-media">
-      <h6>Follow Us</h6>
-      <section class="social-media-icons">
-        <a href="https://whatsapp.com/">
-          <img src="whatsappsq.webp" alt="whatsapp logo" title="whatsapp" />
-        </a>
-        <a href="https://www.instagram.com/">
-          <img src="instagram.webp" alt="instagram logo" title="instagram" />
-        </a>
-        <a href="https://www.linkedin.com/">
-          <img src="linkedin.webp" alt="linkedin logo" title="linkedin" />
-        </a>
-        <a href="https://x.com/">
-          <img src="social-media.webp" alt="x logo" title="twitter x" />
-        </a>
-        <a href="https://telegram.org/">
-          <img src="telegramsq.webp" alt="telegram logo" title="telegram" />
-        </a>
-      </section>
-      <p>Designed by Freepik</p>
-      <p>&copy; 2024 Karoton IT</p>
-    </section>
-  </footer>
+    <p>Designed by Freepik</p>
+    <p>&copy; 2024 Karoton IT</p>
+  </section>
+</footer>
+
 </html>
