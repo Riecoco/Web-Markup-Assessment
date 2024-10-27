@@ -1,1 +1,56 @@
 /* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+
+.swab-body p,
+.swab-body ul li,
+.swab-body a,
+.swab-body figcaption {
+    font-family: Syne;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+table,
+table th,
+table td {
+    border-collapse: collapse;
+    font-family: "Syne", sans-serif;
+    font-size: 1rem;
+    border: 2px #ffa629;
+    border-style: solid;
+}
+
+.navlink:hover {
+    color: #9fc4ff;
+}
+
+.button:active {
+    border-color: #ffa629;
+}
+
+.navlink::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
+    width: 60%;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.1s ease;
+}
+
+.cookies {
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #34445b;
+    padding: 2%;
+    max-width: 20%;
+    margin-top: -10%;
+    border-radius: 15px;
+    position: sticky;
+    top: 700px;
+    transform: translate(0%, -200%);
+}
