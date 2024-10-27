@@ -54,3 +54,7 @@ table td {
     top: 700px;
     transform: translate(0%, -200%);
 }
+
+.epilogue p:last-child {
+    margin-bottom: 5%;
+}
