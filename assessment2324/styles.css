@@ -354,6 +354,84 @@ table td {
     margin-left: 40%;
 }
 
+/** COTFORM **/
+/* Form styling */
+body h3 {
+    text-align: center;
+    margin-top: 2%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    border: none;
+    margin-bottom: 15%;
+}
+
+form section {
+    display: flex;
+    flex-direction: column;
+}
+
+form p {
+    margin: 1%;
+    margin-left: 60%;
+    font-size: 0.7rem;
+    font-family: "Syne", sans-serif;
+    color:#ffa629;
+}
+
+form label, form input, form textarea, form select {
+    font-size: 1rem;
+    font-family: "Syne", sans-serif;
+    padding: 1%;
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-bottom: 1%;
+}
+
+form input, form textarea, form select {
+    background-color: #1c2532;
+    color: #e8ebe4;
+    border: 2px solid #e8ebe4;
+    border-radius: 5px;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+form input::placeholder, form textarea::placeholder, form select::placeholder {
+    color: #adaeab;
+    padding-left: 2%;
+}
+
+form textarea {
+    height: 100px;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(100%);
+}
+
+fieldset {
+    border: 2px solid #ffa629;
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.submit {
+    margin-left: 35%;
+}
+
+/* Form validation styling */
+.error {
+    color: #ff0000;
+    font-size: 0.8rem;
+    margin-left: 5%;
+}
 
 /* Footer styling */
 footer {

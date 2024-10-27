@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Our Team</title>
+    <title>Book A Session</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -38,7 +38,7 @@
 
   <body>
     <main>
-      <h3>Contact Our Team</h3>
+      <h3>Book a Session</h3>
       <form action="https://coolinhollanddemo.azurewebsites.net/" method="POST">
         <!-- 'action' attribute specifies the URL to process the form data -->
         <!-- 'method' attribute specifies how data is sent; 'POST' is common -->
@@ -86,6 +86,19 @@
               placeholder="06x-xxx-xxxx"
             />
             <!-- 'type="tel"' for telephone number input -->
+          </section>
+
+
+          <section>
+            <label for="date">Session Date*:</label>
+            <input type="date" id="date" name="date" required />
+            <!-- 'type="date"' for date input -->
+          </section>
+
+          <section>
+            <label for="time">Session Time*:</label>
+            <input type="time" id="time" name="time" required />
+            <!-- 'type="time"' for time input -->
           </section>
 
           <section>
