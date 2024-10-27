@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap');
-/**
+/*
 .outfit-<uniquifier> {
     font-family: "Outfit", serif;
     font-optical-sizing: auto;
@@ -15,7 +15,7 @@
     font-style: normal;
 }
 
-  **/
+  */
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +27,12 @@ body {
     color:#e8ebe4;
     padding: 20px;
     line-height: 1.5;
+}
+
+p {
+    font-family: "Syne", sans-serif;
+    font-size: 1rem;
+    color: #e8ebe4;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,7 +69,7 @@ h6 {
     margin-bottom: 20px;
 }
 
-header {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,20 +82,20 @@ header {
     object-fit: cover; /* Ensure the image covers the area without distortion */
 }
 
-header figure img {
+.navbar figure img {
     margin-left: 5%;
 }
 
-nav {
+.toplinks {
     margin-left: auto; /* Push the navigation to the right */
 }
 
-nav ul {
+.toplinks ul {
     display: flex;
     list-style: none;
 }
 
-nav ul li {
+.toplinks ul li {
     justify-content: space-around;
 }
 
@@ -104,7 +110,6 @@ nav ul li {
     text-transform: uppercase;
     position: relative;
     transition: color 0.1s ease;
-
 }
 
 .navlink.contact {
@@ -126,7 +131,7 @@ nav ul li {
     transition: border-color 0.1s ease;
 }
 
-/** ::after is a "pseudo-element" used to insert content after the content of an element **/
+/** ::after is a "pseudo-element" used to insert content after the main content of an element **/
 
 .navlink:active::after {
     border-color: #ffa629;
@@ -145,7 +150,7 @@ figure a img {
 }
 
 .get-started {
-    background-color: #ff9400;
+    background-color: #ffa629;
     color: #1c2532;
     border: none;
     padding: 10px 20px;
@@ -186,9 +191,7 @@ main h1 {
 .advice-column p {
     margin-bottom: 1.5rem;
     color: #e8ebe4;
-    font-family: Syne;
     font-size: 1.1rem;
-    
 }
 
 .advice-column p:first-child {
@@ -196,6 +199,7 @@ main h1 {
     text-align: center;
 }
 
+/* Styling for the advice cards (.button) */
 .button-container {
     display: flex;
     justify-content: center;
@@ -224,29 +228,138 @@ main h1 {
     border-color: #ffa629;
 }
 
-article section {
+.button section {
     padding: 20px; /* Padding only for the text side */
 }
 
-article h4 {
+.button h4 {
     font-size: 1.5rem;
-}
-
-article p {
-    font-size: 1rem;
-    color: #ccc;
 }
 
 time {
     font-size: 0.8rem;
-    color: #aaa;
+    color: #e8ebe4;
 }
 
+/* Styling for the contact pages */
+.contact_head {
+    text-align: center;
+}
+
+/* table styling */
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 80%;
+    margin-top: 5%;
+}
+
+table, table th, table td {
+    border-collapse: collapse;
+    font-family: "Syne", sans-serif;
+    font-size: 1rem;
+    border: 2px solid #ffa629;
+}
+
+table th {
+    background-color: #ffa629;
+    color: #1c2532;
+    padding: 10px;
+}
+
+table td {
+    padding: 10px;
+}
+
+/* surrounds the two infoboxes */
+.info_container{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    max-width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info_box {
+    display: flex;
+    border: 2px solid #ffa629;
+    padding: 20px;
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.info_box img {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info_box p {
+    color: #ffa629;
+}
+
+.info_box p:first-child {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.info_box p:last-child {
+    font-size: 1.2rem;
+}
+
+.info_box section {
+    padding-left: 20px;
+}
+
+/* student helper section */
+.student_helper {
+    max-width: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 5%;
+    border: 2px solid #ffa629;
+    border-radius: 30px;
+}
+
+.student_helper section h3 {
+    text-align: center;
+    margin-bottom:0%;
+}
+
+.student_helper section h4 {
+    margin-top: 5%;
+    margin-bottom: 0%;
+}
+
+.student_helper section p {
+    margin-bottom: 1.5%;
+    font-size: 1.1rem;
+}
+
+.student_helper section ul {
+    margin-bottom: 1.5%;
+    margin-left: 2%;
+}
+.student_helper section ul li {
+    margin-bottom: 0.5%;
+    font-family: Syne;
+    font-size: 1.1rem;
+}
+.student_helper section button {
+    margin-left: 40%;
+}
+
+
+/* Footer styling */
 footer {
     display: flex;
     margin-top: 40px;
     padding-top: 40px;
-    border-top: 1px solid #ccc;
     background-color: #9fc4ff;
     margin-left: -20px;
     margin-right: -20px;
@@ -269,8 +382,8 @@ footer section ul li {
 
 footer a, footer p {
     color: #1c2532;
-    font-family: "Syne", sans-serif;
 }
+
 footer a {
     text-decoration: none;
     font-size: 1rem;
@@ -283,7 +396,6 @@ footer .social-media {
 footer .social-media .social-media-icons {
     margin-top: 5px;
     font-size: 0.8rem;
-    color: #aaa;
     width : 120px;
     height: 85px;
     flex-direction: row;

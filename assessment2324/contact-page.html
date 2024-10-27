@@ -5,69 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
 
-    <link rel="stylesheet" type="text/css" href="style1.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Syne:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
 
-  <header>
-    <nav>
-      <ul class="navbar syne-text">
-        <li>
-          <img src="" alt="logo" title="Logo" />
-        </li>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">Advice</a>
-        </li>
-        <li>
-          <a href="">Resources</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
+  <header class="navbar">
+    <figure>
+      <a href="home.html" class="headerlogo">
+        <img
+          src="HEADER LOGO.webp"
+          alt="KarotonIT Logo"
+          title="KarotonIT Logo"
+        />
+      </a>
+    </figure>
+    <nav class="toplinks">
+      <ul>
+        <li><a href="#" class="navlink">Home</a></li>
+        <li><a href="#" class="navlink">Advice</a></li>
+        <li><a href="#" class="navlink">Resources</a></li>
+        <li><a href="#" class="navlink active contact">Contact</a></li>
       </ul>
     </nav>
+    <button type = "button"class="get-started" onclick="window.location.href = 'topresources.html'" >Get Started</button>
   </header>
 
   <main>
     <body>
-      <header>
+      <header class="contact_head">
         <h3>Contact Us</h3>
-      </header>
-
-      <article>
         <p>
           Welcome to our Contact Us page. Do you have any questions or requests
           for us? Don't be afraid to give us a call or send us an email :)
         </p>
+      </header>
 
-        <section>
-          <section>
-            <img src="" alt="phone icon" />
-            <p></p>
-          </section>
-          <section>
-            <img src="" alt="email icon" />
-            <p></p>
+      <article>
+        <section class="contact_body">
+          <section class="info_container">
+            <section class="info_box">
+              <img src="phone.webp" alt="phone icon" title="phone" />
+              <section class="text_info">
+                <p>Phone</p>
+                <p>06x-xxx-xxxx</p>
+              </section>
+            </section>
+            <section class="info_box">
+              <img src="email.webp" alt="email icon" title="email" />
+              <section class="text_info">
+              <p>Email</p>
+              <p>info@karotonit.com</p>
+            </section>
           </section>
         </section>
 
-        <section>
+        <section class="table-container">
+          <table>
+            <tr>
+              <th>Department</th>
+              <th>Email</th>
+              <th>Availability</th>
+            </tr>
+            <tr>
+              <td>General Inquiries</td>
+              <td>info@karotonit.com</td>
+              <td>Monday to Friday, 9 AM – 5 PM</td>
+            </tr>
+            <tr>
+              <td>Technical Support</td>
+              <td>support@karotonit.com</td>
+              <td>Monday to Friday, 10 AM – 6 PM</td>
+            </tr>
+            <tr>
+              <td>Helper Applications</td>
+              <td>enroll@karotonit.com</td>
+              <td>Monday to Friday, 9 AM – 4 PM</td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="student_helper">
           <section>
             <h3>Become a Student Helper - Join the Karoton Mission!</h3>
             <p>
@@ -78,7 +95,7 @@
             </p>
             <p>
               We believe learning should be enjoyable, not stressful. To achieve
-              this, we need your help! If you're an experienced student who
+              this, we need <em>your</em> help! If you're an experienced student who
               understands the challenges of freshman life, you can make a real
               difference by becoming a Student Helper.
             </p>
@@ -99,61 +116,60 @@
               to shape the future.
             </p>
             <p>
-              <strong>Contact Us</strong>to learn more about becoming a Student
+              <strong>Contact Us</strong> to learn more about becoming a Student
               Helper!
             </p>
           </section>
 
-          <section>
-            <button type="button">Join Our Team</button>
+          <section> <!-- onclick="window.location.href='cotform.html'" navigates to cotform.html onclick without changing the styling of the button -->
+            <button type="button" class="get-started" onclick="window.location.href = 'cotform.html'">Join Our Team</button>
           </section>
         </section>
       </article>
     </body>
   </main>
 
-  <footer class="syne-text">
-    <h4>Main Pages</h4>
-    <ul>
-      <li>
-        <a href="">Home</a>
-      </li>
-      <li>
-        <a href="">Advice</a>
-      </li>
-      <li>
-        <a href="">Top Resources</a>
-      </li>
-      <li>
-        <a href="">Contact</a>
-      </li>
-    </ul>
-
-    <h4>Forms</h4>
-    <ul>
-      <li>
-        <a href="">Book a Session</a>
-      </li>
-      <li>
-        <a href="">Contact Our Team</a>
-      </li>
-    </ul>
-    <h4>Follow Us</h4>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <a href="">
-      <img src="" alt="image" />
-    </a>
-    <p>Copyright &copy; Karoton 2024 All rights reserved.</p>
+  <footer>
+    <figure>
+      <img src="Asset-3.webp" alt="KarotonIT Logo" title="KarotonIT Logo" />
+    </figure>
+    <section class="page-links">
+      <h6>Main Pages</h6>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="advicecolumn.html">Advice Column</a></li>
+        <li><a href="topresources.html">Top Resources</a></li>
+        <li><a href="contact-page.html">Contact</a></li>
+      </ul>
+    </section>
+    <section class="forms">
+      <h6>Forms</h6>
+      <ul>
+        <li><a href="bookingform.html">Book a Session</a></li>
+        <li><a href="cotform.html">Contact Our Team</a></li>
+      </ul>
+    </section>
+    <section class="social-media">
+      <h6>Follow Us</h6>
+      <section class="social-media-icons">
+        <a href="https://whatsapp.com/">
+          <img src="whatsappsq.webp" alt="whatsapp logo" title="whatsapp" />
+        </a>
+        <a href="https://www.instagram.com/">
+          <img src="instagram.webp" alt="instagram logo" title="instagram" />
+        </a>
+        <a href="https://www.linkedin.com/">
+          <img src="linkedin.webp" alt="linkedin logo" title="linkedin" />
+        </a>
+        <a href="https://x.com/">
+          <img src="social-media.webp" alt="x logo" title="twitter x" />
+        </a>
+        <a href="https://telegram.org/">
+          <img src="telegramsq.webp" alt="telegram logo" title="telegram" />
+        </a>
+      </section>
+      <p>Designed by Freepik</p>
+      <p>Copyright &copy; Karoton 2024 All rights reserved.</p>
+    </section>
   </footer>
 </html>
