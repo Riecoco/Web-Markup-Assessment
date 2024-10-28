@@ -1,4 +1,6 @@
 /* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Syne:wght@400..800&display=swap');
 
 .swab-body p,
 .swab-body ul li,
@@ -10,13 +12,27 @@
     word-spacing: 2px;
 }
 
+.navlink {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #e8ebe4;
+    font-family: "Outfit", serif;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.1s ease;
+}
+
 table,
 table th,
 table td {
     border-collapse: collapse;
     font-family: "Syne", sans-serif;
     font-size: 1rem;
-    border: 2px #ffa629;
+    border:#ffa629;
+    border-width: 2px;
     border-style: solid;
 }
 
@@ -58,3 +74,6 @@ table td {
 .epilogue p:last-child {
     margin-bottom: 5%;
 }
+
+/* Styling for the advice posts - SWAB */
+

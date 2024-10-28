@@ -655,7 +655,8 @@ table td {
     border-collapse: collapse;
     font-family: "Syne", sans-serif;
     font-size: 1rem;
-    border: 2px #ffa629;
+    border: #ffa629;
+    border-width: 2px;
     border-style: solid;
 }
 
@@ -816,9 +817,14 @@ form textarea {
     height: 100px;
 }
 
+/* targets the calendar picker button in date input fields (<input type="date">) in WebKit-based browsers (such as Chrome and Safari). 
+This pseudo-element allows you to style the calendar icon that appears in these input fields. */
 ::-webkit-calendar-picker-indicator {
     filter: invert(100%);
 }
+/* applies an invert filter to the calendar picker icon, which inverts the colors of the icon.
+This makes the icon white, which is more visible against the dark background of the input field. */
+*/
 
 fieldset {
     border: 2px solid #ffa629;
@@ -865,11 +871,16 @@ footer section ul li {
 footer a,
 footer p {
     color: #1c2532;
+    font-family: "Syne", sans-serif;
 }
 
 footer a {
     text-decoration: none;
     font-size: 1rem;
+}
+
+footer a:hover {
+    text-decoration: solid underline;
 }
 
 footer .social-media {
